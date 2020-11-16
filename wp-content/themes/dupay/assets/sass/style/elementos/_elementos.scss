@@ -1,0 +1,98 @@
+body * {
+
+}
+
+strong, b {
+	font-weight: $bold;
+}
+
+h1, h2, h3, h4, h5 {
+	font-family: $font-destaque;
+	font-weight: $bold;
+	color: $cor-txt-destaque;
+}
+
+h1, h2 {
+
+	a {
+
+	}
+}
+
+h2 {
+
+}
+
+h3 {
+	font-size: 20px;
+	line-height: 24px;
+}
+
+h4 {
+}
+
+h1, h2, h3 {
+	&.destaque {
+		background-color: $cor1;
+		padding: 10px 20px;
+		color: #ffffff;
+		text-align: center;
+		display: inline;
+
+		&.cor-branco {
+			background-color: #ffffff;
+			padding: 7.5px 15px;
+			color: $cor1;
+		}
+
+		&.cor-cor2 {
+			background-color: $cor2;
+			padding: 7.5px 15px;
+			color: #ffffff;
+		}
+	}
+}
+
+p {
+	display: block;
+	font-weight: $light;
+	font-size: $font-size;
+	line-height: $line-height;
+	color: $cor-txt;
+
+	a {
+		color: $cor1;
+		font-weight: $bold;
+
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+
+	&:not(:last-child){
+		margin-bottom: 25px;
+	}
+}
+
+a {
+	text-decoration: none;
+	@include animacao;
+
+	&.underline {
+		text-decoration: underline;
+	}
+
+	&.inline {
+		&:hover {
+			text-decoration: underline;
+		}	
+	}
+}
+
+img {
+	&.img-block{
+		display: block;
+		max-width: 100%;
+		width: 100%;
+	}
+}
